@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+body {
+    background-color: #ebd9f1;
+}
+
+
+
+header {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.moonza {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.sns {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.phoboo {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.mal {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.zilmoon {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.datee {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.timee {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px ;
+    margin-bottom: 15px;
+    padding: 10px;
+}
