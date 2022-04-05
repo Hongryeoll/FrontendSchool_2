@@ -4,108 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>구글 폼</title>
-    <link rel="stylesheet" href="017.css">
+    <title>hello</title>
 </head>
 <body>
-    <header>
-        <h1>나와 잘 맞는 회사는 ?</h1>
-            <p>가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
-    </header>
-    
-    <main>
-        
-        <section class="moonza">
-            <form>
-                <p>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요.</p>
+    <img src="images/dog.jpg" alt="cute_dog" width="600px;">
 
-                <input type="radio" name="company" id="naver" value="네" required>
-                <label for="naver">네</label>
-                <br>
-                <input type="radio" name="company" id="kakao" value="카">
-                <label for="kakao">카</label>
-                <br>
-                <input type="radio" name="company" id="line" value="라">
-                <label for="line">라</label>
-                <br>
-                <input type="radio" name="company" id="coupang" value="쿠">
-                <label for="coupang">쿠</label>
-                <br>
-                <input type="radio" name="company" id="baemin" value="배">
-                <label for="baemin">배</label>
+    <img srcset="images/rabbit_500.png 500w,
+    images/rabbit_300.png 300w,
+    images/rabbit_150.png 150w" 
+    sizes="(min-width:960px) 500px, (min-width:640px) 300px, 900px"
+    src="images/rabbit_150.png" alt="rabbit">
 
-            </form>
-        </section>    
-        
-        <section class="sns">
-            <form action="sns">
-                <p>친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.</p>
-                
-                <input type="checkbox" name="sns" id="kakao" value="카카오톡">
-                <label for="kakao">카카오톡</label>
-                <br>
-                <input type="checkbox" name="sns" id="line" value="라인">
-                <label for="line">라인</label>
-                <br>
-                <input type="checkbox" name="sns" id="insta" value="인스타">
-                <label for="insta">인스타 디엠</label>
-                <br>
-                <input type="checkbox" name="sns" id="nateon" value="네이트온">
-                <label for="nateon">네이트온</label>
-                <br>
-                <input type="checkbox" name="sns" id="budybudy" value="버디버디">
-                <label for="budybudy">버디버디</label>
+    <!-- 위) 강의로 배운 코드 아래) 의문코드 출력결과는 같음 -->
 
-            </form>
-        </section>
-        
-        <section class="phoboo">    
-            <form action="phoboo">
-            
-                <p>면접에서 자신의 포부를 한 문장으로 얘기 한다면?</p>
-                    <input type="text" placeholder="내 답변">
-        
-            </form>
-        </section>
-        
-        <section class="mal">
-            <form>
-                <p>당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해주고 싶은 말은?</p>
+    <img srcset="images/rabbit_500.png 500w,
+    images/rabbit_500.png 300w,
+    images/rabbit_550.png 150w" 
+    sizes="(min-width:960px) 500px, (min-width:640px) 300px, 900px"
+    src="images/rabbit_150.png" alt="rabbit">
 
-                <input type="text" placeholder="내 답변">
-            </form>
-        </section>
+    <img srcset="images/rabbit_500.png 500w"
+    sizes="(min-width:960px) 500px, (min-width:640px) 300px, 900px"
+    src="images/rabbit_150.png" alt="rabbit">
 
-        <section class="zilmoon">
-            <form action="select">
-                <p>다음 기술 면접때 듣고 싶은 질문이 아닌것은?</p>
-                    <select>
-                        <option selected>선택</option>
-                    </select>
-        </section>        
-        
-        <section class="datee">
-            </form>
-            <form>
-                <p>취업을 희망하는 날짜를 선택해주세요</p>
-                날짜<br>
-                <input type="date">
+    <!-- sizes는 이미지 자체가 바뀌지않음 -->
 
-            </form>
-        </section>
+    <!-- <picture>
+        <source srcset="img/rabbit_500.png" media="(min-width:960px)">
+        <source srcset="img/rabbit_300.png" media="(min-width:640px)">
+        <img src="img/rabbit_150.png" alt="">
+    </picture> -->
 
-        <section class="timee">
-            <form>
-                <p>업무를 시작 하기에 가장 적당한 시간을 고르세요</p>
-                
-                시간
-                <br>
-                <input type="time">
-            </form>
-        </section>
-    </main>    
-    <footer>
-        <button type="submit">제출</button>
-    </footer>
+    <!-- picture를 사용하면 이미지 자체가 바뀜 -->
+
+
 </body>
 </html>
