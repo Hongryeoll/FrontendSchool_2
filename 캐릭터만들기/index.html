@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      /* animaion */
+      @keyframes 혓바닥 {
+        from {
+          transform: rotate(1deg);
+        }
+        to {
+          transform: rotate(-5deg) translate(15px);
+        }
+      }
+
+      @keyframes 입 {
+        from {
+          transform: rotate(1deg);
+        }
+        to {
+          transform: rotate(-3deg) translate(15px);
+        }
+      }
+
+      /*
+      @keyframes 꼬리 {
+        from {
+          transform: rotate(20deg);
+        }
+        to {
+          transform: rotate(-20deg) translatey(10px);
+        }
+      }
+      */
+      /* reset */
+      body
+        margin: 0;
+        padding: 0;
+      }
+      /* layout */
+      /* design */
+      *,
+      *:after,
+      *:before {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url(./짱이.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 180%;
+      }
+      .zzang {
+        position: relative;
+        top: 25px;
+        margin: 80px auto;
+        width: 400px;
+        height: 400px;
+      }
+      .zzang .ear {
+        position: absolute;
+        top: 10px;
+        width: 150px;
+        height: 300px;
+        border: 5px solid #000;
+        border-radius: 50%;
+        background-color: rgb(239, 223, 187);
+      }
+      .zzang .ear.left {
+        top: -90px;
+        left: -40px;
+        transform: rotate(310deg);
+        border-radius: 70% 70% 0 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .zzang .ear.right {
+        top: -110px;
+        right: 150px;
+        transform: rotate(340deg);
+        border-radius: 70% 70% 0 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .zzang .earline.left {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        width: 90px;
+        background-color: rgb(234, 159, 159);
+        border: 30px solid rgb(236, 144, 144);
+        border-radius: 30%;
+        transform: rotate(90deg);
+        border-radius: 70% 0 0 70%;
+      }
+
+      .zzang .earline.right {
+        position: absolute;
+        top: 55px;
+        left: 5px;
+        width: 110px;
+        background-color: #000;
+        border: 30px solid rgb(236, 144, 144);
+        border-radius: 30%;
+        transform: rotate(80deg);
+        border-radius: 70% 0 0 70%;
+      }
+
+      .zzang .face {
+        position: absolute;
+        bottom: 40px;
+        left: -65px;
+        width: 580px;
+        height: 400px;
+        border-radius: 50%;
+        border: 8px solid #000;
+        background-color: rgb(239, 223, 187);
+      }
+
+      .zzang .faceline {
+        position: absolute;
+        top: 27px;
+        width: 250px;
+        height: 210px;
+        border-radius: 50% 90% 50% 50%;
+        background-color: rgb(185, 77, 0);
+        right: 15px;
+      }
+
+      .zzang .eye {
+        position: absolute;
+        top: 150px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #000;
+      }
+
+      .eye.left {
+        left: 155px;
+      }
+
+      .eye.right {
+        right: 145px;
+      }
+      .eyeline {
+        position: absolute;
+        top: 140px;
+        width: 55px;
+        height: 55px;
+        border-radius: 45% 45% 45% 45%;
+        background-color: rgb(185, 77, 0);
+        left: 147px;
+      }
+      .nose {
+        position: absolute;
+        top: 230px;
+        left: 247px;
+        width: 75px;
+        height: 40px;
+        border-radius: 20% 20% 50% 50%;
+        background: black;
+      }
+
+      .nose-left {
+        position: absolute;
+        width: 7px;
+        top: 243px;
+        left: 277px;
+        height: 7px;
+        border-radius: 100%;
+        background-color: rgb(245, 245, 245);
+      }
+
+      .nose-right {
+        position: absolute;
+        width: 7px;
+        top: 243px;
+        left: 297px;
+        height: 7px;
+        border-radius: 100%;
+        background-color: rgb(245, 245, 245);
+      }
+
+      .mouth {
+        position: absolute;
+        top: 300px;
+        border: 5px solid #000;
+        border-radius: 40%;
+        width: 150px;
+        right: 170px;
+        animation: 입 1s infinite alternate;
+        animation-delay: 1s;
+      }
+
+      .mouthbottom {
+        position: absolute;
+        width: 70px;
+        height: 50px;
+        border: 10px solid #000;
+        border-radius: 10% 10% 40% 40%;
+        top: 300px;
+        right: 180px;
+        background-color: #c94f53;
+        animation: 혓바닥 1s infinite alternate;
+        animation-delay: 1s;
+      }
+      /* 꼬리만들고싶었는데 ㅠㅠ 알게되면 바로 해야겠다 ! */
+      /*
+      .tail {
+        position: absolute;
+        top: 220px;
+        left: -210px;
+        width: 230px;
+        background-color: rgb(239, 223, 187);
+        border: 30px solid rgb(239, 223, 187);
+        border-radius: 90%;
+        transform:scalez(50)
+        border-radius: 90% 0 0 90%;
+        animation: 꼬리 1s infinite alternate;
+        z-index: -8
+      }
+      .tail-dot {
+        position: absolute;
+        width: 35px;
+        top: 250px;
+        left: -70px;
+        height: 100px;
+        border-radius: 100%;
+        transform: rotate(55deg);
+        background-color: rgba(95, 103, 76, 0.882);
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div class="zzang">
+      <div class="ear left">
+        <div class="earline left"></div>
+      </div>
+      <div class="ear right">
+        <div class="earline right"></div>
+      </div>
+      <div class="face">
+        <div class="faceline"></div>
+        <div class="eyeline"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose"></div>
+        <div class="nose-left"></div>
+        <div class="nose-right"></div>
+        <div class="mouth"></div>
+        <div class="mouthbottom"></div>
+      </div>
+      <div class="tail"></div>
+    </div>
+  </body>
+</html>
