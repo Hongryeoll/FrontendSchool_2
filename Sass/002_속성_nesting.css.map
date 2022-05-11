@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "version": 3,
   "mappings": "AAAA,AAAA,SAAS,CAAC;EAEF,gBAAK,EAAE,qCAAqC;EAC5C,mBAAQ,EAAE,aAAa;EACvB,iBAAM,EAAE,SAAS;EACjB,eAAI,EAAE,SAAS;CAEtB",
   "sources": [
@@ -7,3 +8,13 @@
   "names": [],
   "file": "002_속성_nesting.css"
 }
+=======
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EAEN,gBAAK,EAAE,qCAAqC;EAC5C,mBAAQ,EAAE,aAAa;EACvB,iBAAM,EAAE,SAAS;EACjB,eAAI,EAAE,SAAS;CAElB",
+    "sources": [
+        "002_속성_nesting.scss"
+    ],
+    "names": [],
+    "file": "002_속성_nesting.css"
+}
+>>>>>>> 21c7f995ea02bcf13e754c06eb12bce2139d1922

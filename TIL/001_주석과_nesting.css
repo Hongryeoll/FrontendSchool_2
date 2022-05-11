@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset "UTF-8";
 /* 두 줄 주석입니다. */
 ul li {
@@ -33,8 +32,4 @@ ul li {
 .two_ .four_ {
   color: black;
 }
-/*# sourceMappingURL=001.css.map */
-=======
-/* */
-/*# sourceMappingURL=001.css.map */
->>>>>>> 21c7f995ea02bcf13e754c06eb12bce2139d1922
+/*# sourceMappingURL=001_주석과_nesting.css.map */

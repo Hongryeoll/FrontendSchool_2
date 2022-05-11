@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      /* animaion */
+      @keyframes 혓바닥 {
+        from {
+          transform: rotate(10deg);
+        }
+        to {
+          transform: rotate(-10deg) translate(10px);
+        }
+      }
+
+      @keyframes 입 {
+        from {
+          transform: rotate(10deg);
+        }
+        to {
+          transform: rotate(-10deg) translate(10px);
+        }
+      }
+
+      /* reset */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /* layout */
+      /* design */
+      *,
+      *:after,
+      *:before {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: rgb(243, 138, 34);
+      }
+
+      .zzang {
+        position: relative;
+        top: 200px;
+        margin: 50px auto;
+        width: 400px;
+        height: 380px;
+      }
+      .zzang .ear {
+        position: absolute;
+        top: 10px;
+        width: 150px;
+        height: 300px;
+        border: 5px solid #000;
+        border-radius: 50%;
+        background-color: rgb(239, 223, 187);
+      }
+      .zzang .ear.left {
+        top: -90px;
+        left: 55px;
+        transform: rotate(-10deg);
+        border-radius: 70% 70% 0 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .zzang .ear.right {
+        top: -100px;
+        right: -30px;
+        transform: rotate(10deg);
+        border-radius: 70% 70% 0 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .zzang .earline.left {
+        position: absolute;
+        top: 45px;
+        left: 30px;
+        width: 90px;
+        background-color: rgb(234, 159, 159);
+        border: 27px solid rgb(236, 144, 144);
+        border-radius: 30%;
+        transform: rotate(90deg);
+        border-radius: 70% 0 0 70%;
+      }
+
+      .zzang .earline.right {
+        position: absolute;
+        top: 55px;
+        left: 20px;
+        width: 110px;
+        background-color: #000;
+        border: 30px solid rgb(236, 144, 144);
+        border-radius: 30%;
+        transform: rotate(90deg);
+        border-radius: 70% 0 0 70%;
+      }
+
+      .zzang .face {
+        position: absolute;
+        bottom: 0;
+        width: 500px;
+        height: 410px;
+        border-radius: 50%;
+        border: 8px solid #000;
+        background-color: rgb(239, 223, 187);
+      }
+
+      .zzang .faceline {
+        position: absolute;
+        top: 27px;
+        width: 235px;
+        height: 220px;
+        border-radius: 50% 90% 50% 50%;
+        background-color: rgb(185, 77, 0);
+        right: 10px;
+      }
+
+      .zzang .eye {
+        position: absolute;
+        top: 150px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #000;
+      }
+
+      .eye.left {
+        left: 125px;
+      }
+
+      .eye.right {
+        right: 125px;
+      }
+      .eyeline {
+        position: absolute;
+        top: 140px;
+        width: 55px;
+        height: 55px;
+        border-radius: 45% 45% 45% 45%;
+        background-color: rgb(185, 77, 0);
+        left: 117px;
+      }
+      .nose {
+        position: absolute;
+        top: 230px;
+        left: 200px;
+        width: 75px;
+        height: 40px;
+        border-radius: 20% 20% 50% 50%;
+        background: black;
+      }
+
+      .mouth {
+        position: absolute;
+        top: 300px;
+        border: 5px solid #000;
+        border-radius: 40%;
+        width: 150px;
+        right: 150px;
+        animation: 입 1s infinite alternate;
+        animation-delay: 1s;
+      }
+
+      .mouthbottom {
+        position: absolute;
+        width: 70px;
+        height: 50px;
+        border: 10px solid #000;
+        border-radius: 10% 10% 40% 40%;
+        top: 300px;
+        right: 180px;
+        background-color: #c94f53;
+        animation: 혓바닥 1s infinite alternate;
+        animation-delay: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="zzang">
+      <div class="ear left">
+        <div class="earline left"></div>
+      </div>
+      <div class="ear right">
+        <div class="earline right"></div>
+      </div>
+      <div class="face">
+        <div class="faceline"></div>
+        <div class="eyeline"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+        <div class="mouthbottom"></div>
+      </div>
+    </div>
+  </body>
+</html>
