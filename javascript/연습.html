@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+      let value1 = 30;
+      let value2 = 50;
+
+      console.log(value1 > value2); //false
+      console.log(value1 >= value2); //false
+      console.log(value1 < value2); // true
+      console.log(value1 <= value2); // true
+
+      ---
+
+      console.log(value1 == value2); //false
+      console.log(value1 === value2); //flase
+
+      ---
+
+      console.log(`1 ${!!undefined}`); //1 ${!!undefined}
+      console.log(`2 ${!!null}`); //2 ${!!null}
+      console.log(`3 ${!!NaN}`); // 3 ${!!NaN}
+
+      ---
+
+      let person = {
+        name: '이호준',
+        age: 10,
+      };
+
+      document.write(`제 이름은 ${person.name} 입니다.<br>`);
+      // 제 이름은 이호준 입니다.
+    </script>
+  </body>
+</html>

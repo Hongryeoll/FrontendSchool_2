@@ -1,0 +1,236 @@
+body {
+  background-color: rgb(57, 55, 55);
+}
+
+.header {
+  background-image: url(./images/cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  position: relative;
+  padding: 30%;
+  z-index: 1;
+  box-shadow: inset -3px -25px 26px -12px #000000, 1px 14px 45px 1px black;
+  -webkit-box-shadow: inset -3px -25px 26px -12px #000000,
+    1px 14px 45px 1px black;
+  -moz-box-shadow: inset -3px -25px 26px -12px #000000, 1px 14px 45px 1px black;
+  -o-box-shadow: inset -3px -25px 26px -12px #000000, 1px 14px 45px 1px black;
+}
+
+#app {
+  background-color: gray;
+}
+
+.wrap {
+  padding: 10%;
+}
+
+.content-wrap {
+  display: flex;
+  background-color: black;
+  gap: 10%;
+}
+
+.movie-history {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: -100px;
+}
+
+.movie-history .decobox {
+  background-color: red;
+  color: #fff;
+  padding: 3px;
+  letter-spacing: 3px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+  z-index: 5;
+  margin-bottom: 110px;
+  width: fit-content;
+}
+
+.movie-history .movie-title {
+  font-size: 120px;
+  color: #fff;
+  z-index: 5;
+  margin-top: -100px;
+}
+
+.movie-history .history {
+  color: gray;
+  padding: 10px;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+.movie-info {
+  color: gray;
+  justify-content: space-around;
+  z-index: 5;
+  margin-top: -180px;
+  padding: 70px;
+}
+
+.movie-genre .genre {
+  display: inline-block;
+  margin: 2px;
+  background-color: rgb(44, 44, 44);
+  color: rgb(209, 209, 209);
+  font-size: 18px;
+}
+
+.movie-ratings .ratings-img {
+  width: 200px;
+}
+
+.movie-genre .genre-text {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.movie-genre .wrap-genre {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-ratings {
+  margin: 40px 0;
+  font-size: 25px;
+}
+
+.movie-ratings .ratings-title {
+  color: #fff;
+  margin-top: 80px;
+}
+
+.movie-character .character-text {
+  color: #fff;
+  margin-top: 80px;
+  font-size: 25px;
+}
+
+.movie-ratings .ratings-grade {
+  display: block;
+  height: 35px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.movie-ratings .ratings-grade::after {
+  content: "";
+  background: url(./images/star.png);
+  display: block;
+  background-position: 0 -40px;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+.movie-ratings .ratings-grade::before {
+  content: "";
+  background: url(./images/star.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 0 -3px;
+  height: 35px;
+  width: 200px;
+  margin-top: 40px;
+  z-index: 5;
+  margin-bottom: -58px;
+}
+
+.movie-character .character-bab {
+  content: "";
+  background: url(./images/member01.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin: 50px 0;
+  border-radius: 70%;
+  z-index: 1;
+}
+
+.movie-character .character-dasy::after {
+  content: "";
+  background: url(./images/member02.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  margin-top: -100px;
+  border-radius: 70%;
+  z-index: 3;
+}
+
+.movie-character .character-hellen::after {
+  content: "";
+  background: url(./images/member03.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 80px;
+  margin-top: -50px;
+  border-radius: 70%;
+  z-index: 5;
+}
+
+.movie-character .character-violet::after {
+  content: "";
+  background: url(./images/member04.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 120px;
+  margin-top: -50px;
+  border-radius: 70%;
+  z-index: 7;
+}
+
+@media (max-width: 780px) {
+  .content-wrap {
+    flex-direction: column;
+  }
+
+  .movie-history .movie-title {
+    font-size: 40px;
+  }
+
+  .movie-history {
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  .movie-info {
+    padding: 10px;
+    margin-top: -30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .movie-genre .wrap-genre {
+    flex-wrap: wrap;
+    width: 200px;
+  }
+
+  .movie-ratings .ratings-title {
+    margin-top: -10px;
+  }
+
+  .movie-character .character-text {
+    margin-top: -10px;
+  }
+}
